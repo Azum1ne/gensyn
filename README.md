@@ -56,9 +56,6 @@ python3 -m venv .venv
 source .venv/bin/activate
 # If that doesn't work, try:
 . .venv/bin/activate
-
-# Install vLLM
-pip install vllm
 ```
 
 ---
