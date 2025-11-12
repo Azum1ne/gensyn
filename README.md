@@ -6,7 +6,7 @@
 
 ## 🧠 Recommended Models
 
-`Gensyn/Qwen2.5-0.5B-Instruct`
+`Qwen2.5-Coder-0.5B-Instruct`
 
 ## ⚙️ Installation Setup
 
@@ -81,7 +81,7 @@ Then open the provided URL in your browser to complete authentication.
 
 ## 🧠 Recommended Models
 
-`Gensyn/Qwen2.5-0.5B-Instruct`
+`Qwen2.5-Coder-0.5B-Instruct`
 
 ---
 
