@@ -1,6 +1,6 @@
 # 🧠 RL-Swarm (Private Setup)
   
-#### Thanks to **arcxteam** & **gasoline** for the base setup references.
+#### Thanks to **arcxteam** for the base setup references.
 
 ---
 
@@ -38,7 +38,7 @@ dpkg -i cloudflared-linux-amd64.deb || apt-get install -f -y
 
 ### 4️⃣ Clone Repository
 ```bash
-git clone https://github.com/Azum1ne/rl-swarm1.git
+git clone https://github.com/Azum1ne/rl-swarm.git
 ```
 
 ---
