@@ -4,6 +4,10 @@
 
 ---
 
+## 🧠 Recommended Models
+
+`Gensyn/Qwen2.5-0.5B-Instruct`
+
 ## ⚙️ Installation Setup
 
 ### 1️⃣ Update System Packages
@@ -32,13 +36,9 @@ dpkg -i cloudflared-linux-amd64.deb || apt-get install -f -y
 
 ---
 
-### 4️⃣ Clone Repository & Replace `run_rl_swarm.sh`
+### 4️⃣ Clone Repository
 ```bash
-git clone https://github.com/arcxteam/rl-swarm.git && \
-cd rl-swarm && \
-rm -f run_rl_swarm.sh && \
-wget https://raw.githubusercontent.com/gasoline2255/Gensyn-Testnet/main/run_rl_swarm.sh -O run_rl_swarm.sh && \
-chmod +x run_rl_swarm.sh
+git clone https://github.com/Azum1ne/rl-swarm1.git
 ```
 
 ---
@@ -81,13 +81,7 @@ Then open the provided URL in your browser to complete authentication.
 
 ## 🧠 Recommended Models
 
-| Category | Model Name |
-|-----------|-------------|
-| ✅ Recommended | `Gensyn/Qwen2.5-0.5B-Instruct` |
-| ✅ Recommended | `Qwen/Qwen3-0.6B` |
-| 🧪 Optional | `nvidia/AceInstruct-1.5B` |
-| 🧪 Optional | `dnotitia/Smoothie-Qwen3-1.7B` |
-| 🧪 Optional | `Gensyn/Qwen2.5-1.5B-Instruct` |
+`Gensyn/Qwen2.5-0.5B-Instruct`
 
 ---
 
