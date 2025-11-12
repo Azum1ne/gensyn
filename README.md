@@ -7,8 +7,8 @@
 ## 🧠 Recommended Models
 
 Models (CodeZero):
-   - **Qwen/Qwen2.5-Coder-0.5B-Instruct** — Solver role  
-   - **Qwen/Qwen2.5-Coder-1.5B-Instruct** — Evaluator (frozen)
+   - **Qwen/Qwen2.5-Coder-0.5B-Instruct** 
+   - **Qwen/Qwen2.5-Coder-1.5B-Instruct**
 
 ## ⚙️ Installation Setup
 
@@ -81,8 +81,8 @@ Then open the provided URL in your browser to complete authentication.
 ## 🧠 Recommended Models
 
 Models (CodeZero):
-   - **Qwen/Qwen2.5-Coder-0.5B-Instruct** — Solver role  
-   - **Qwen/Qwen2.5-Coder-1.5B-Instruct** — Evaluator (frozen)
+   - **Qwen/Qwen2.5-Coder-0.5B-Instruct**
+   - **Qwen/Qwen2.5-Coder-1.5B-Instruct**
 ---
 
 ## 🧾 Notes
