@@ -48,6 +48,7 @@ git clone https://github.com/Azum1ne/rl-swarm.git
 ### 5️⃣ Create Screen Session
 ```bash
 screen -S gensyn
+cd rl-swarm
 ```
 
 ---
