@@ -12,7 +12,7 @@ Models (CodeZero):
 
 ## ⚙️ Installation Setup
 
-### 1️⃣ Update System Packages
+### 1. Update System Packages
 ```bash
 apt update && apt upgrade -y && \
 apt install screen curl ufw nload tree iptables git wget lz4 jq make gcc nano automake autoconf \
@@ -23,14 +23,14 @@ speedtest-cli ca-certificates libffi-dev libsqlite3-dev -y
 
 ---
 
-### 2️⃣ Install Node.js, NPM, Yarn, and PM2
+### 2. Install Node.js, NPM, Yarn, and PM2
 ```bash
 source <(wget -qO- https://raw.githubusercontent.com/arcxteam/w-ai-wombo/main/nodejs.sh)
 ```
 
 ---
 
-### 3️⃣ Install Cloudflared Tunnel
+### 3. Install Cloudflared Tunnel
 ```bash
 wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
 dpkg -i cloudflared-linux-amd64.deb || apt-get install -f -y
@@ -38,14 +38,21 @@ dpkg -i cloudflared-linux-amd64.deb || apt-get install -f -y
 
 ---
 
-### 4️⃣ Clone Repository
+### 4 INSTALL DOCKER COMPOSE (FOR CPU ONLY, SKIP IF YOU RUN WITH GPU)
+```bash
+curl -sSL https://raw.githubusercontent.com/arcxteam/succinct-prover/refs/heads/main/docker.sh | bash
+```
+
+---
+
+### 5 Clone Repository
 ```bash
 git clone https://github.com/Azum1ne/rl-swarm.git
 ```
 
 ---
 
-### 5️⃣ Create Screen Session
+### 6 Create Screen Session
 ```bash
 screen -S gensyn
 cd rl-swarm
@@ -53,35 +60,49 @@ cd rl-swarm
 
 ---
 
-### 6️⃣ Set Up Python Virtual Environment
+### 7. RUN FOR GPU
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 # If that doesn't work, try:
 . .venv/bin/activate
 ```
-
----
-
-### 7️⃣ Run RL Swarm
 ```bash
 ./run_rl_swarm.sh
 ```
 
 ---
 
+### 8. FOR CPU ONLY
+```bash
+docker compose run --rm --build -Pit --user 0:0 swarm-cpu
+```
+---
+
+## DETACH SCREEN
+`CTRL A+D`
+
 ## 🔑 Login (Tunnel Access)
-Once `run_rl_swarm.sh` is running, open the tunnel for login:
+open the tunnel for login:
 ```bash
 cloudflared tunnel --url http://localhost:3000
 ```
+you will see your link, for example : `https://randomstring.trycloudflare.com`
+
 Then open the provided URL in your browser to complete authentication.
 
 ---
 
-## 🧠 Recommended Models
+## After login, Attach Screen
+```bash
+screen -r gensyn
+```
 
-Models (CodeZero):
+you will see prompt : 
+`Push Model to Huggingface (y/n)` press N
+`choose model:` **Qwen/Qwen2.5-Coder-0.5B-Instruct**
+
+## Models (CodeZero):
    - **Qwen/Qwen2.5-Coder-0.5B-Instruct**
    - **Qwen/Qwen2.5-Coder-1.5B-Instruct**
 ---
@@ -89,7 +110,7 @@ Models (CodeZero):
 ## 🧾 Notes
 - This setup guide is for **private use and internal testing only**.  
 - Credit to the original authors of RL Swarm and the GenRL framework.  
-- Base installation references: **arcxteam** & **gasoline**.
+- Base installation references: **arcxteam**
 
 ---
 
