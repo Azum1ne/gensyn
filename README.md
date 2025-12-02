@@ -98,10 +98,11 @@ Then open the provided URL in your browser to complete authentication.
 screen -r gensyn
 ```
 
-you will see prompt : 
+## you will see prompt : 
 `Push Model to Huggingface (y/n)` press N
-`choose model:` **Qwen/Qwen2.5-Coder-0.5B-Instruct**
-
+----
+`choose model:` (Choose model below)
+----
 ## Models (CodeZero):
    - **Qwen/Qwen2.5-Coder-0.5B-Instruct**
    - **Qwen/Qwen2.5-Coder-1.5B-Instruct**
