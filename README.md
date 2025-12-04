@@ -47,7 +47,7 @@ curl -sSL https://raw.githubusercontent.com/arcxteam/succinct-prover/refs/heads/
 
 ### 5 Clone Repository
 ```bash
-git clone https://github.com/Azum1ne/rl-swarm.git
+git clone https://github.com/arcxteam/rl-swarm.git && cd rl-swarm
 ```
 
 ---
